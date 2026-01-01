@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clixer.ai | Enterprise Analytics Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              coal: '#0F1116', // Deep Gunmetal
+              anthracite: '#181B21', // Richer Dark Grey
+              surface: '#21252E', // Blue-tinted grey
+              'surface-highlight': '#2F3542',
+              neon: {
+                cyan: '#00CFDE', // Toned down Enterprise Cyan (was #00F0FF)
+                blue: '#3B82F6',
+                purple: '#A78BFA', // Muted Purple for secondary accents
+                amber: '#FBBF24'   // Soft Amber for critical numbers
+              }
+            },
+            backgroundImage: {
+              'grid-pattern': "linear-gradient(to right, #2F3542 1px, transparent 1px), linear-gradient(to bottom, #2F3542 1px, transparent 1px)",
+            },
+            boxShadow: {
+              '3d': '0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3), inset 0 1px 0 0 rgba(255, 255, 255, 0.05)',
+              '3d-hover': '0 25px 30px -5px rgba(0, 0, 0, 0.5), 0 15px 15px -5px rgba(0, 0, 0, 0.4), inset 0 1px 0 0 rgba(255, 255, 255, 0.1)',
+              'glow': '0 0 25px rgba(0, 207, 222, 0.15)', // Reduced glow intensity
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0F1116;
+        background-image: radial-gradient(circle at 50% 0%, #1C2029 0%, #0F1116 80%);
+        color: #e2e8f0;
+        min-height: 100vh;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0F1116; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2F3542; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00CFDE; 
+      }
+      .glass-panel {
+        background: rgba(15, 17, 22, 0.75);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .card-3d {
+        background: linear-gradient(160deg, #21252E 0%, #181B21 100%);
+        box-shadow: 
+          0 10px 30px rgba(0,0,0,0.4), 
+          inset 0 1px 0 rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.04);
+        transition: all 0.3s ease;
+      }
+      .card-3d:hover {
+        transform: translateY(-5px);
+        box-shadow: 
+          0 20px 40px rgba(0,0,0,0.5), 
+          inset 0 1px 0 rgba(255,255,255,0.1),
+          0 0 0 1px rgba(0, 207, 222, 0.1); /* Reduced cyan highlight on hover */
+      }
+    </style>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "recharts": "https://esm.sh/recharts@^3.6.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-4Kv7gYSL.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
